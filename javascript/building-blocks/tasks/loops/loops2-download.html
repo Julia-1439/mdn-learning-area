@@ -41,6 +41,17 @@
     ]
 
     // Add your code here
+    // I would use a for-of loop here but MDN told me I should use a different
+    // one from Exercise 01. 
+    for (let i = 0; i < phonebook.length; ++i) {
+      pair = phonebook[i];
+      if (pair.name !== 'Mustafa'){
+        console.log(pair.name);
+        continue;
+      }
+      para.textContent += pair.number;
+      break;
+    }
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
