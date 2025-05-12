@@ -41,6 +41,15 @@
 
 
     // Add your code here
+    // use a do-while loop for funzies :)
+    do {
+      if (isPrime(i)) {
+        para.textContent += `${i}, `;
+      }
+
+      --i;
+    } while (i > 1);
+    para.textContent = para.textContent.slice(0, para.textContent.length - 2);
 
 
     // Don't edit the code below here!
